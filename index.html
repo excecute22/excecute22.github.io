@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login y Registro de Nueva Cuenta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Contenedor Principal -->
+  <div class="container mt-5">
+
+    <!-- Fila con dos columnas: Login y Registro -->
+    <div class="row">
+      <!-- Columna Login -->
+      <div class="col-md-6">
+        <h3 class="text-center">Login</h3>
+        <form>
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="loginEmail" placeholder="Introduce tu correo">
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="loginPassword" placeholder="Introduce tu contraseña">
+          </div>
+          <a href="Dashboard.html" class="btn btn-primary w-100">Iniciar Sesión</a>
+        </form>
+      </div>
+
+      <!-- Columna Registro -->
+      <div class="col-md-6">
+        <h3 class="text-center">Nueva Cuenta</h3>
+        <form>
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label">Correo</label>
+            <input type="email" class="form-control" id="registerEmail" placeholder="Introduce tu correo">
+          </div>
+          <div class="mb-3">
+            <label for="registerPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="registerPassword" placeholder="Introduce tu contraseña">
+          </div>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirma tu contraseña">
+          </div>
+          <div class="mb-3">
+            <label for="companyName" class="form-label">Nombre de la Empresa</label>
+            <input type="text" class="form-control" id="companyName" placeholder="Nombre de tu empresa">
+          </div>
+          <div class="mb-3">
+            <label for="companyLogo" class="form-label">Logotipo de la Empresa</label>
+            <input type="file" class="form-control" id="companyLogo">
+          </div>
+          <div class="mb-3">
+            <label for="primaryColor" class="form-label">Color Principal</label>
+            <input type="color" class="form-control form-control-color" id="primaryColor" value="#563d7c">
+          </div>
+          <div class="mb-3">
+            <label for="secondaryColor" class="form-label">Color Secundario</label>
+            <input type="color" class="form-control form-control-color" id="secondaryColor" value="#6c757d">
+          </div>
+          <div class="mb-3">
+            <label for="paymentDetails" class="form-label">Datos de Pago</label>
+            <input type="text" class="form-control" id="paymentDetails" placeholder="Introduce tus datos de pago">
+          </div>
+          <button type="submit" class="btn btn-success w-100">Crear Cuenta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
